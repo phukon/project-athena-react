@@ -6,6 +6,8 @@ import ResourcePage from './components/ResourcePage';
 import EventsPage from './components/EventsPage';
 import CommunityPage from './components/CommunityPage';
 import RegisterPage from './components/RegisterPage';
+import Contributors from './components/Contributors';
+import Contact from './components/ContactUs';
 import { UserContextProvider } from './UserContext';
 
 
@@ -22,6 +24,8 @@ function App() {
               <Route path='/resources' element = {<ResourcePage/>}/>
               <Route path='/events' element = {<EventsPage/>}/>
               <Route path='/community' element = {<CommunityPage/>}/>
+              <Route path='/contact' element = {<Contact/>}/>
+              <Route path='/contributors' element = {<Contributors/>}/>
           </Route>
         </Routes>
     </UserContextProvider>

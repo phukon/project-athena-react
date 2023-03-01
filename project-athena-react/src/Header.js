@@ -28,6 +28,11 @@ export default function Header() {
     return (
         <header>
         <Link to = "/" className="logo">Home</Link>
+        <Link to = "/resources">Resources</Link>
+        <Link to = "/events">Events</Link>
+        <Link to = "/community">Community</Link>
+        <Link to = "/contributors">Contributors</Link>
+        <Link to = "/contact">Contact Us</Link>
         <nav>
           {username && (
             <>
