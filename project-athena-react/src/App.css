@@ -240,3 +240,18 @@ article {
   margin-bottom: 2%;
   padding: 24px 82px;
 }
+
+#cool-box-1:hover{
+  transition: transform 0.3s;
+  transform: none;
+}
+
+#cool-box-2:hover{
+  transition: transform 0.3s;
+  transform: none;
+}
+
+#cool-box-3:hover{
+  transition: transform 0.3s;
+  transform: none;
+}
