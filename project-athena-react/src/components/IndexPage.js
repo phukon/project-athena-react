@@ -14,8 +14,9 @@ export default function IndexPage() {
                 </div>
             </article>
             <article id="article-2">
-                <div id="Scroll">
+                <div id="scroll">
                     <p>Scroll</p>
+                    <img src={Images.downArrow}/>
                 </div>
                 <div id="content-2">
                     <p>
@@ -23,7 +24,14 @@ export default function IndexPage() {
                     </p>
                 </div>
             </article>
-            <article id="article-3">1232</article>
+            <article id="article-3">
+                <div className="cool-box" id="cool-box-1">
+                    <img src={Images.elon2}/>
+                    <h1>Study Smarter, Not Harder</h1>
+                    <p>Share and discover resources for your academic success</p>
+                    <button>Explore</button>
+                </div>
+            </article>
             <article id="article-4">123</article>
             <article id="article-5">132</article>
        </main>
