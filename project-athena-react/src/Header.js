@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import {useContext, useEffect, useState } from "react";
 import { UserContext } from "./UserContext";
+import Images from './assets/Images';
+
 
 export default function Header() {
   const {userInfo, setUserInfo} = useContext(UserContext);
@@ -27,28 +29,33 @@ export default function Header() {
 
     return (
         <header>
-        <Link to = "/" className="logo">Home</Link>
-        <Link to = "/resources">Resources</Link>
-        <Link to = "/events">Events</Link>
-        <Link to = "/community">Community</Link>
-        <Link to = "/contributors">Contributors</Link>
-        <Link to = "/contact">Contact Us</Link>
-        <Link to = "/contribute">Contribute +</Link>
-        <nav>
-          {username && (
-            <>
-              <Link to = "/create">Create new post</Link>
-              <a onClick={logout}>Logout</a>
-            </>
-          )}
+          <div id='header-logo-section' className='nav-section'><img src={Images.projectAthena} alt = 'logo'/></div>
+          <div id='header-nav-section' className='nav-section'>
+            <Link to = "/">Home</Link>
+            <Link to = "/resources">Resources</Link>
+            <Link to = "/events">Events</Link>
+            <Link to = "/community">Community</Link>
+            <Link to = "/contributors">Contributors</Link>
+            <Link to = "/contact">Contact Us</Link>
+          </div>
+          <div id='header-button-section' className='nav-section'>
+            <Link to = "/contribute">Contribute +</Link>
+          </div>
+          {/* <nav>
+            {username && (
+              <>
+                <Link to = "/create">Create new post</Link>
+                <a onClick={logout}>Logout</a>
+              </>
+            )}
 
-          {!username && (
-            <>
-              <Link to = "/login">Login</Link>
-              <Link to = "/register">Register</Link>
-            </>
-          )}
-        </nav>
+            {!username && (
+              <>
+                <Link to = "/login">Login</Link>
+                <Link to = "/register">Register</Link>
+              </>
+            )}
+          </nav> */}
       </header>
     )
 }

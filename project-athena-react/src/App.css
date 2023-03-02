@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+:root {
+  --background-color: rgb(252, 236, 236);
+  --border-color: rgb(0, 0, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, a, p, span {
+  font-family: "Nunito", Helvetica;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  border-bottom: 3px solid var(--border-color);
+}
+
+header .nav-section {
+  padding: 2.5rem 2rem;
+  display: flex;
+  gap: 2rem;
+  border-left: 3px solid var(--border-color);
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header #header-button-section {
+  border-left: none
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#header-logo-section, #header-button-section {
+  flex-basis: calc(100% / 7); /* elements to be one-tenth of the container width. */
+  justify-content: flex;
+}
+
+#header-nav-section {
+  flex-grow: 1;
 }

@@ -1,15 +1,18 @@
 import {Route, Routes} from 'react-router-dom';
 import Layout from './Layout';
-import IndexPage from "./components/IndexPage";
-import LoginPage from './components/LoginPage';
-import ResourcePage from './components/ResourcePage';
-import EventsPage from './components/EventsPage';
-import CommunityPage from './components/CommunityPage';
-import RegisterPage from './components/RegisterPage';
-import Contributors from './components/Contributors';
-import Contact from './components/ContactUs';
-import Contribute from './components/Contribute';
+// import IndexPage from "./components/IndexPage";
+// import LoginPage from './components/LoginPage';
+// import ResourcePage from './components/ResourcePage';
+// import EventsPage from './components/EventsPage';
+// import CommunityPage from './components/CommunityPage';
+// import RegisterPage from './components/RegisterPage';
+// import Contributors from './components/Contributors';
+// import Contact from './components/ContactUs';
+// import Contribute from './components/Contribute';
+import { IndexPage, LoginPage, ResourcePage, EventsPage, CommunityPage, RegisterPage, Contributors, Contact, Contribute } from "./components/Index";
+
 import { UserContextProvider } from './UserContext';
+import './App.css';
 
 
 
