@@ -8,6 +8,7 @@ import CommunityPage from './components/CommunityPage';
 import RegisterPage from './components/RegisterPage';
 import Contributors from './components/Contributors';
 import Contact from './components/ContactUs';
+import Contribute from './components/Contribute';
 import { UserContextProvider } from './UserContext';
 
 
@@ -26,6 +27,7 @@ function App() {
               <Route path='/community' element = {<CommunityPage/>}/>
               <Route path='/contact' element = {<Contact/>}/>
               <Route path='/contributors' element = {<Contributors/>}/>
+              <Route path='/contribute' element = {<Contribute/>}/>
           </Route>
         </Routes>
     </UserContextProvider>

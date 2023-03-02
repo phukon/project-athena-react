@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function Contributors() {
   return (
-    <div>Contributors</div>
+    <div><h1>Contributors</h1></div>
   )
 }

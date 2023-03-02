@@ -33,6 +33,7 @@ export default function Header() {
         <Link to = "/community">Community</Link>
         <Link to = "/contributors">Contributors</Link>
         <Link to = "/contact">Contact Us</Link>
+        <Link to = "/contribute">Contribute +</Link>
         <nav>
           {username && (
             <>

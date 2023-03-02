@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function ResourcePage() {
   return (
-    <div>ResourcePage</div>
+    <div><h1>ResourcePage</h1></div>
   )
 }
