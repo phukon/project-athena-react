@@ -73,6 +73,7 @@ main > article {
 
 #article-1 {
   grid-template-columns: 2fr 1fr;
+  margin-bottom: -36em;
 }
 
 #article-2 {
@@ -83,7 +84,7 @@ main > article {
   height: 253px;
   left: 109px;
   object-fit: cover;
-  position: absolute;
+  position:relative;
   top: 9px;
   width: 256px;
 }
@@ -92,8 +93,8 @@ main > article {
   height: 253px;
   left: 153px;
   object-fit: cover;
-  position: absolute;
-  top: 92px;
+  position: relative;
+  top: -8em;
   width: 256px;
 }
 
@@ -101,8 +102,8 @@ main > article {
   height: 253px;
   left: 0px;
   object-fit: cover;
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -30em;
   width: 256px;
 }
 
@@ -110,8 +111,8 @@ main > article {
   height: 253px;
   left: 32px;
   object-fit: cover;
-  position: absolute;
-  top: 126px;
+  position: relative;
+  top: -40em;
   width: 256px;
 }
 
@@ -124,13 +125,13 @@ article {
   font-size: 40px;
   font-weight: 400;
   width:95%;
-  padding: 5rem 2rem;
+  padding: 5rem 4rem;
 }
 
 #scroll > p {
   font-size: 40px;
   font-weight: 400;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
 }
 
 #scroll > img {
@@ -142,7 +143,7 @@ article {
   font-size: 24px;
   font-weight: 400;
   width:100%;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   line-height: normal;
 }
 
