@@ -46,6 +46,14 @@ header #header-button-section {
   border-left: none
 }
 
+header #header-button-section button{
+  background-color: #e13030;
+  border: 1px solid;
+  border-radius: 22px;
+  padding: 13px 24px;
+  font-weight: 500;
+}
+
 #header-logo-section, #header-button-section {
   flex-basis: calc(100% / 7); /* elements to be one-tenth of the container width. */
   justify-content: flex;

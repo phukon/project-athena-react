@@ -39,7 +39,7 @@ export default function Header() {
             <Link to = "/contact">Contact Us</Link>
           </div>
           <div id='header-button-section' className='nav-section'>
-            <Link to = "/contribute">Contribute +</Link>
+            <Link to = "/contribute"> <button>Contribute +</button></Link>
           </div>
           {/* <nav>
             {username && (

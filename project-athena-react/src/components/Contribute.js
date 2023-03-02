@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function Contribute() {
   return (
-    <div><h1>Contribute</h1></div>
+    <main>
+      <div><h1>Contribute</h1></div>
+    </main>
   )
 }
