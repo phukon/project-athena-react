@@ -24,7 +24,6 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0px;
-  overflow: hidden;
 }
 
 header {
@@ -61,4 +60,73 @@ header #header-button-section button{
 
 #header-nav-section {
   flex-grow: 1;
+}
+
+main {
+  flex-grow: 1;
+}
+
+main > article {
+  display: grid;
+  height: 100%;
+}
+
+#article-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
+#article-2 {
+  grid-template-columns: 2fr 2fr;
+}
+
+#images > #image-1 {
+  height: 253px;
+  left: 109px;
+  object-fit: cover;
+  position: absolute;
+  top: 9px;
+  width: 256px;
+}
+
+#images > #image-2 {
+  height: 253px;
+  left: 153px;
+  object-fit: cover;
+  position: absolute;
+  top: 92px;
+  width: 256px;
+}
+
+#images > #image-3 {
+  height: 253px;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 256px;
+}
+
+#images > #image-4 {
+  height: 253px;
+  left: 32px;
+  object-fit: cover;
+  position: absolute;
+  top: 126px;
+  width: 256px;
+}
+
+#article-1 #content-1 > p{
+  font-size: 40px;
+  font-weight: 400;
+  width:95%;
+  padding: 5rem 2rem;
+}
+
+
+#article-2 #content-2 > p{
+  font-size: 24px;
+  font-weight: 400;
+  width:100%;
+  padding: 1rem 2rem;
+  line-height: normal;
 }
