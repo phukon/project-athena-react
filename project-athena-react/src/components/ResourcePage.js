@@ -52,7 +52,7 @@ export default function EventsPage() {
           <button class="form-button" type="button" id="typeValue">
             Let's Go! <i class="fas fa-rocket"></i>
           </button>
-        </div>
+        </div>        
       </article>
 
       <article class="article-6" id='event-article-4'>
