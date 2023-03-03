@@ -1,9 +1,25 @@
 import React from 'react';
+import '../Events.css'
+import Images from '../assets/Images';
 
-export default function CommunityPage() {
+export default function EventsPage() {
   return (
     <main>
-      <div><h1>CommunityPage</h1></div>
+      <article id='community-article-1'>
+          <h1>Collaborate to Innvoate</h1>
+          <p>Find Partners and Resources to Take your Research to the Next Level</p>
+      </article>
+
+      <article id='community-article-2'>
+        <span>Content</span>
+      </article>
+
+      <article class="article-6" id='event-article-4'>
+          <img src={Images.elon5} alt=""/>
+          <h1>Suit Up, Students</h1>
+          <p>Upload Your Resources and Help Your Peers Reach New Heights of Academic Excellence</p>
+          <button>Upload Now➡</button>
+      </article>
     </main>
   )
 }

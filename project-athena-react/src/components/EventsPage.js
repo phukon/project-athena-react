@@ -40,7 +40,7 @@ export default function EventsPage() {
       </article>
 
       <article id='event-article-3'>  
-        <h1>will populate later</h1>
+        <h1>will populate later //////////Content//////////</h1>
       </article>
 
       <article class="article-6" id='event-article-4'>
