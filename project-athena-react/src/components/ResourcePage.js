@@ -49,6 +49,7 @@ export default function EventsPage() {
                 <option value="8">TU</option>
               </select>
           </div>
+          
           <button class="form-button" type="button" id="typeValue">
             Let's Go! <i class="fas fa-rocket"></i>
           </button>
