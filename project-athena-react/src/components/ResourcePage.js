@@ -50,9 +50,7 @@ export default function EventsPage() {
               </select>
           </div>
           
-          <button class="form-button" type="button" id="typeValue">
-            Let's Go! <i class="fas fa-rocket"></i>
-          </button>
+          <button class="form-button" id="typeValue">Let's Go!</button>
         </div>        
       </article>
 
