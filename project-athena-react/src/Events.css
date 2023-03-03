@@ -41,3 +41,8 @@
     margin-left: 10%;
     font-size: 28px;
 }
+
+#event-article-4 button{
+    background-color: #ffcf26;
+    color: black;
+}

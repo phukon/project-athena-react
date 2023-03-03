@@ -43,11 +43,11 @@ export default function EventsPage() {
         <h1>will populate later</h1>
       </article>
 
-      <article class="article-6">
+      <article class="article-6" id='event-article-4'>
           <img src={Images.elon5} alt=""/>
           <h1>Suit Up, Students</h1>
           <p>Upload Your Resources and Help Your Peers Reach New Heights of Academic Excellence</p>
-          <button>Join Now➡</button>
+          <button>Upload Now➡</button>
       </article>
     </main>
   )
