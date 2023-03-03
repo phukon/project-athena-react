@@ -13,6 +13,19 @@
     justify-items: center;
 }
 
+#community-article-2 {
+    justify-items: center;
+}
+
+#community-article-2 h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+}
+
+#community-article-2 p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #community-article-1 h1,
 #community-article-1 p,
 #resource-article-1 h1,

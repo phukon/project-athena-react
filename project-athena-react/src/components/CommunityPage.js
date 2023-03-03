@@ -11,7 +11,8 @@ export default function EventsPage() {
       </article>
 
       <article id='community-article-2'>
-        <span>Content</span>
+        <h1>Connect with Your Institute Community Soon!</h1>
+        <p>A Hub for All Your Institute Needs - Get Ready to Collaborate!</p>
       </article>
 
       <article class="article-6" id='event-article-4'>

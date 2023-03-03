@@ -4,7 +4,7 @@ import elon2 from '../assets/elon2.png';
 import elon3 from '../assets/elon3.png';
 import elon4 from '../assets/elon4.png';
 import elon5 from '../assets/elon5.png';
-import downArrow from '../assets/down-arrow.svg';
+import downArrow from '../assets/downArrow.svg';
 
 
 

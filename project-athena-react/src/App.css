@@ -4,7 +4,7 @@
 }
 
 h1, h2, h3, a, p, span {
-  font-family: "Nunito", Helvetica;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 400;
   color: rgb(0, 0, 0);
   margin: 0px;
@@ -24,11 +24,12 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 header {
   display: flex;
-  width: 100%;
+  width: auto;
   border-bottom: 3px solid var(--border-color);
 }
 
@@ -73,47 +74,10 @@ main > article {
 
 #article-1 {
   grid-template-columns: 2fr 1fr;
-  margin-bottom: -36em;
 }
 
 #article-2 {
   grid-template-columns: 2fr 2fr;
-}
-
-#images > #image-1 {
-  height: 253px;
-  left: 109px;
-  object-fit: cover;
-  position:relative;
-  top: 9px;
-  width: 256px;
-}
-
-#images > #image-2 {
-  height: 253px;
-  left: 153px;
-  object-fit: cover;
-  position: relative;
-  top: -8em;
-  width: 256px;
-}
-
-#images > #image-3 {
-  height: 253px;
-  left: 0px;
-  object-fit: cover;
-  position: relative;
-  top: -30em;
-  width: 256px;
-}
-
-#images > #image-4 {
-  height: 253px;
-  left: 32px;
-  object-fit: cover;
-  position: relative;
-  top: -40em;
-  width: 256px;
 }
 
 article {
@@ -121,8 +85,13 @@ article {
   margin-bottom: 5%
 }
 
+.yellow-underline {
+  text-decoration: underline;
+  text-decoration-color: #ffcf26
+}
+
 #article-1 #content-1 > p{
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 400;
   width:95%;
   padding: 5rem 4rem;

@@ -5,12 +5,9 @@ export default function IndexPage() {
     return (
        <main>
             <article id="article-1">
-                <div id="content-1"><p>We're just a bunch of sleep-deprived college students trying to make it through our degrees without becoming permanently caffeinated. But hey, at least we're doing it together!</p></div>
+                <div id="content-1"><p>We're <span class="yellow-underline">just a bunch of sleep-deprived college students</span> trying to make it through our degrees without becoming permanently caffeinated. But hey, at least we're doing it together!</p></div>
                 <div id="images">
                     <img src={Images.elon} alt = 'elons' id="image-1"/>
-                    <img src={Images.elon} alt = 'elons' id="image-2"/>
-                    <img src={Images.elon} alt = 'elons' id="image-3"/>
-                    <img src={Images.elon} alt = 'elons' id="image-4"/>
                 </div>
             </article>
             <article id="article-2">
