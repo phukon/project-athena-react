@@ -206,7 +206,7 @@ article {
   transform: rotate(-4.15deg);
 }
 
-#article-6 {
+.article-6 {
   border: 2px solid;
   box-shadow: 0px 50px 0px;
   display:grid;
@@ -214,25 +214,25 @@ article {
   width:100%;
 }
 
-#article-6 > img {
+.article-6 > img {
   margin-top: 2%;
   height: 119px;
   object-fit: cover;
 }
 
-#article-6 > h1 {
+.article-6 > h1 {
   font-size: 64px;
   font-weight: 600;
   margin-bottom: 2%;
 }
 
-#article-6  p {
+.article-6  p {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 2%;
 }
 
-#article-6 button {
+.article-6 button {
   font-size: 24px;
   color: aliceblue;
   background-color: #e13030;

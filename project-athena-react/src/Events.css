@@ -1,0 +1,43 @@
+#event-article-1 {
+    background-color: #ffcf26;
+    justify-items: center;
+}
+
+#event-article-1  h1 {
+    font-weight: 600;
+    font-size: 48px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#event-article-1  p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15%
+}
+
+#event-article-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#event-article-2 .square-box {
+    border-radius: 26px;
+    border-color: black;
+    box-shadow: 12px 4px 0px;
+    height: 200px;
+    width: 300px;
+    display: grid;
+}
+
+#details {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+#event-article-2 p {
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 28px;
+}
