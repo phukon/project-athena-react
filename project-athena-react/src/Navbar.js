@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
+
 import './Navbar.css'
 
 export function Navbar({
@@ -45,7 +46,10 @@ Navbar.defaultProps = {
     brand: 'Navbar',
     links:[
         {text: "Home", link:"/"},
-        {text: "Portfolio", link:"/portfolio"},
-        {text: "Blog", link:"/blog"}
+        {text: "Resources", link:"/resources"},
+        {text: "Events", link:"/events"},
+        {text: "Community", link:"/community"},
+        {text: "Contributors", link:"/contributors"},
+        {text: "Contact Us", link:"/contact"}
     ]
 }
