@@ -18,14 +18,14 @@ a {
   text-decoration: none;
 }
 
-body {
+/* body {
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin: 0px;
+  margin: 0rem;
   overflow-x: hidden;
-}
+} */
 
 header {
   display: flex;
@@ -49,8 +49,8 @@ header #header-button-section {
 header #header-button-section button{
   background-color: #e13030;
   border: 1px solid;
-  border-radius: 22px;
-  padding: 13px 24px;
+  border-radius: 1rem;
+  padding: 0.9rem 2rem;
   font-weight: 500;
 }
 
@@ -91,25 +91,25 @@ article {
 }
 
 #article-1 #content-1 > p{
-  font-size: 35px;
+  font-size: 2.2rem;
   font-weight: 400;
   width:95%;
   padding: 5rem 4rem;
 }
 
 #scroll > p {
-  font-size: 40px;
+  font-size: 2.4rem;
   font-weight: 400;
   padding: 1rem 4rem;
 }
 
 #scroll > img {
-  height: 74px;
-  width: 15px;
+  height: 4.6rem;
+  width: 1rem;
 }
 
 #article-2 #content-2 > p{
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   width:100%;
   padding: 1rem 4rem;
@@ -122,56 +122,55 @@ article {
 
 .cool-box {
   border: 2px solid;
-  border-radius: 370px;
   box-shadow: 0px 20px 0px;
   display:grid;
   justify-items:center;
-  width:75em;
+  width:70rem;
 }
 
 .cool-box > img {
   margin-top: 2%;
-  height: 119px;
+  height: 7.5rem;
   object-fit: cover;
 }
 
 .cool-box > h1 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 600;
   margin-bottom: 2%;
 }
 
 .cool-box > p {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 2%;
 }
 
 .cool-box button {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: aliceblue;
   background-color: #e13030;
-  border-radius: 34px;
+  border-radius: 4rem;
   cursor: pointer;
   margin-bottom: 2%;
-  padding: 24px 82px;
+  padding: 1.5rem 5rem;
 }
 
 #cool-box-1 {
   background-color: #ffcf26;
-  border-radius: 370px;
+  border-radius: 10rem;
   transform: rotate(-4.85deg);
 }
 
 #cool-box-2 {
   background-color: #ffffff;
-  border-radius: 370px;
+  border-radius: 10rem;
   transform: rotate(2.85deg);
 }
 
 #cool-box-3 {
   background-color: #376fff;
-  border-radius: 370px;
+  border-radius: 10rem;
   transform: rotate(-4.15deg);
 }
 
@@ -185,30 +184,30 @@ article {
 
 .article-6 > img {
   margin-top: 2%;
-  height: 119px;
+  height: 7.5rem;
   object-fit: cover;
 }
 
 .article-6 > h1 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 600;
   margin-bottom: 2%;
 }
 
 .article-6  p {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 2%;
 }
 
 .article-6 button {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: aliceblue;
   background-color: #e13030;
-  border-radius: 34px;
+  border-radius: 2rem;
   cursor: pointer;
   margin-bottom: 2%;
-  padding: 24px 82px;
+  padding: 1.5rem 5rem;
 }
 
 #cool-box-1:hover{
@@ -225,3 +224,28 @@ article {
   transition: transform 0.3s;
   transform: none;
 }
+
+/* @media(max-width: 800px) {  
+  
+  header[data-toggled="true"] > #header-nav-section {  
+    transform: translateY(0%);
+  }
+
+  header[data-toggled="true"] > #nav-toggle-button {
+    border-left: none;
+  }
+
+  header[data-transitionable="true"] > #header-nav-section {
+    transition: transform 400ms ease;
+  }
+    
+  #header-nav-section {
+    background-color: var(--background-color);
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    transform: translateY(-100%);
+  } 
+  
+} */
