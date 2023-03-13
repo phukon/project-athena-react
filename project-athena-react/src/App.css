@@ -22,10 +22,6 @@ a {
   text-decoration: none;
 }
 
-header {
-  justify-content: space-between;  
-}
-
 #article-1 #images{
   display: none;
 }
