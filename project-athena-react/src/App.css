@@ -14,6 +14,10 @@ h1, h2, h3, a, p, span {
   box-sizing: border-box;
 }
 
+main {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,12 +26,6 @@ header {
   justify-content: space-between;  
 }
 
-#header-nav-section {
-  background-color: var(--background-color);
-  font-size: 1.5rem;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  transform: translateY(-100%); /* Change*/
+#article-1 #images{
+  display: none;
 }
