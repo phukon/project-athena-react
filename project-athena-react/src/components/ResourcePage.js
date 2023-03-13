@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Events.css'
+
 import Images from '../assets/Images';
 
 export default function EventsPage() {
