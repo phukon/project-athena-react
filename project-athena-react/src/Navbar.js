@@ -23,7 +23,8 @@ export function Navbar({
                 {links.map((node) =>{
                     return(<Link key={node.text} to={node.link} style={{color: fontColor}}>{node.text}</Link>);
                 })}
-            </div> 
+            </div>
+
         </nav>
         <div className={`overlay-container${isMenuClosed ? "-hidden" : "-show"}`}>
             <div style={{backgroundColor: backgroundColor}}>
