@@ -225,8 +225,8 @@ article {
   transform: none;
 }
 
-/* @media(max-width: 800px) {  
-  
+ @media(max-width: 800px) {  
+  /*
   header[data-toggled="true"] > #header-nav-section {  
     transform: translateY(0%);
   }
@@ -238,14 +238,15 @@ article {
   header[data-transitionable="true"] > #header-nav-section {
     transition: transform 400ms ease;
   }
-    
-  #header-nav-section {
+     
+   */
+   #header-nav-section {
     background-color: var(--background-color);
+    font-size: 1.5rem;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
     position: fixed;
-    transform: translateY(-100%);
-  } 
-  
-} */
+    transform: translateY(0%);
+  }
+}
