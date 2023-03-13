@@ -15,10 +15,10 @@ h1, h2, h3, a, p, span {
 }
 
 
+a {
+  text-decoration: none;
+}
 
-/* Tablet */
-@media(max-width: 820px) {
-  
 main > article {
   display: grid;
   height: 100%;
@@ -122,6 +122,7 @@ main > article {
   margin-bottom: 1rem;
   padding: 1rem 6rem;
 }
+
 
  
 #cool-box-1 {
