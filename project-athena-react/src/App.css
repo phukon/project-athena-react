@@ -22,6 +22,153 @@ a {
   text-decoration: none;
 }
 
+main > article {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 #article-1 #images{
   display: none;
+}
+
+#article-1 #content-1 > p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0rem 1rem;
+}
+
+.yellow-underline {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #ffcf26
+}
+
+#article-2 {
+  grid-template-columns: 2fr 2fr;
+}
+
+#scroll {
+  display: flex;
+}
+
+#scroll > p {
+  font-size: 2rem;
+  padding: 0rem 1rem;
+}
+
+#scroll > img {
+  height: 4rem;
+}
+
+#article-2 #content-2 > p{
+  font-size: 1rem;
+  padding-right: 1rem;
+  line-height: 1.5rem;
+}
+
+.cool-box {
+  border: 2px solid;
+  box-shadow: 0px 15px 0px;
+  display:grid;
+  justify-items:center;
+  width: 100%;
+}
+
+.cool-box > img {
+  margin-top: 1rem;
+  height: 7rem;
+  object-fit: cover;
+}
+
+.cool-box > h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cool-box > p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0rem 1rem;
+  text-align: center;
+}
+
+.cool-box button {
+  font-size: 1.5rem;
+  color: aliceblue;
+  background-color: #e13030;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 1rem 6rem;
+}
+
+#cool-box-1 {
+  background-color: #ffcf26;
+  border-radius: 5rem;
+  transform: rotate(-4.85deg);
+}
+
+#cool-box-2 {
+  background-color: #ffffff;
+  border-radius: 5rem;
+  transform: rotate(2.85deg);
+}
+
+#cool-box-3 {
+  background-color: #376fff;
+  border-radius: 5rem;
+  transform: rotate(-4.15deg);
+}
+
+.article-6 {
+  border: 2px solid;
+  box-shadow: 0px 50px 0px;
+  display:grid;
+  justify-items:center;
+  width:100%;
+}
+
+.article-6 > img {
+  margin-top: 1rem;
+  height: 7.5rem;
+  object-fit: cover;
+}
+
+.article-6 > h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.article-6  p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.article-6 button {
+  font-size: 1.5rem;
+  color: aliceblue;
+  background-color: #e13030;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 1rem 5rem;
+}
+
+#cool-box-1:hover{
+  transition: transform 0.3s;
+  transform: none;
+}
+
+#cool-box-2:hover{
+  transition: transform 0.3s;
+  transform: none;
+}
+
+#cool-box-3:hover{
+  transition: transform 0.3s;
+  transform: none;
 }

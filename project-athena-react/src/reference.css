@@ -1,0 +1,252 @@
+:root {
+  --background-color: rgb(255, 255, 255);
+  --border-color: rgb(0, 0, 0);
+}
+
+h1, h2, h3, a, p, span {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0rem;
+  overflow-x: hidden;
+} */
+
+header {
+  display: flex;
+  width: auto;
+  border-bottom: 3px solid var(--border-color);
+}
+
+header .nav-section {
+  padding: 2rem 2rem;
+  display: flex;
+  gap: 2rem;
+  border-left: 3px solid var(--border-color);
+  align-items: center;
+  justify-content: center;
+}
+
+header #header-button-section {
+  border-left: none
+}
+
+header #header-button-section button{
+  background-color: #e13030;
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 0.9rem 2rem;
+  font-weight: 500;
+}
+
+#header-logo-section, #header-button-section {
+  flex-basis: calc(100% / 7); /* elements to be one-tenth of the container width. */
+  justify-content: flex;
+}
+
+#header-nav-section {
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 1;
+}
+
+main > article {
+  display: grid;
+  height: 100%;
+}
+
+#article-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
+#article-2 {
+  grid-template-columns: 2fr 2fr;
+}
+
+article {
+  justify-content: center;
+  margin-bottom: 5%
+}
+
+.yellow-underline {
+  text-decoration: underline;
+  text-decoration-color: #ffcf26
+}
+
+#article-1 #content-1 > p{
+  font-size: 2.2rem;
+  font-weight: 400;
+  width:95%;
+  padding: 5rem 4rem;
+}
+
+#scroll > p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding: 1rem 4rem;
+}
+
+#scroll > img {
+  height: 4.6rem;
+  width: 1rem;
+}
+
+#article-2 #content-2 > p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  width:100%;
+  padding: 1rem 4rem;
+  line-height: normal;
+}
+
+#scroll {
+  display: flex;
+}
+
+.cool-box {
+  border: 2px solid;
+  box-shadow: 0px 20px 0px;
+  display:grid;
+  justify-items:center;
+  width:70rem;
+}
+
+.cool-box > img {
+  margin-top: 2%;
+  height: 7.5rem;
+  object-fit: cover;
+}
+
+.cool-box > h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+.cool-box > p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+
+.cool-box button {
+  font-size: 1.5rem;
+  color: aliceblue;
+  background-color: #e13030;
+  border-radius: 4rem;
+  cursor: pointer;
+  margin-bottom: 2%;
+  padding: 1.5rem 5rem;
+}
+
+#cool-box-1 {
+  background-color: #ffcf26;
+  border-radius: 10rem;
+  transform: rotate(-4.85deg);
+}
+
+#cool-box-2 {
+  background-color: #ffffff;
+  border-radius: 10rem;
+  transform: rotate(2.85deg);
+}
+
+#cool-box-3 {
+  background-color: #376fff;
+  border-radius: 10rem;
+  transform: rotate(-4.15deg);
+}
+
+.article-6 {
+  border: 2px solid;
+  box-shadow: 0px 50px 0px;
+  display:grid;
+  justify-items:center;
+  width:100%;
+}
+
+.article-6 > img {
+  margin-top: 2%;
+  height: 7.5rem;
+  object-fit: cover;
+}
+
+.article-6 > h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+.article-6  p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+
+.article-6 button {
+  font-size: 1.5rem;
+  color: aliceblue;
+  background-color: #e13030;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin-bottom: 2%;
+  padding: 1.5rem 5rem;
+}
+
+#cool-box-1:hover{
+  transition: transform 0.3s;
+  transform: none;
+}
+
+#cool-box-2:hover{
+  transition: transform 0.3s;
+  transform: none;
+}
+
+#cool-box-3:hover{
+  transition: transform 0.3s;
+  transform: none;
+}
+
+ @media(max-width: 800px) {  
+  /*
+  header[data-toggled="true"] > #header-nav-section {  
+    transform: translateY(0%);
+  }
+
+  header[data-toggled="true"] > #nav-toggle-button {
+    border-left: none;
+  }
+
+  header[data-transitionable="true"] > #header-nav-section {
+    transition: transform 400ms ease;
+  }
+     
+   */
+   #header-nav-section {
+    background-color: var(--background-color);
+    font-size: 1.5rem;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    transform: translateY(0%);
+  }
+}
