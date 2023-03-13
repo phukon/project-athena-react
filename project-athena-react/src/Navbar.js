@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import Images from './assets/Images';
 
 
 import './Navbar.css'
@@ -41,9 +42,9 @@ export function Navbar({
 }
 
 Navbar.defaultProps = {
-    backgroundColor : 'black',
-    fontColor: 'white',
-    brand: 'Navbar',
+    backgroundColor : 'white',
+    fontColor: 'black',
+    brand: <img src={Images.projectAthena}/>,
     links:[
         {text: "Home", link:"/"},
         {text: "Resources", link:"/resources"},
