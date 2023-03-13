@@ -41,22 +41,10 @@ export default function Header() {
           <div id='header-button-section' className='nav-section'>
             <Link to = "/contribute"> <button>Contribute +</button></Link>
           </div>
-          {/* <nav>
-            {username && (
-              <>
-                <Link to = "/create">Create new post</Link>
-                <a onClick={logout}>Logout</a>
-              </>
-            )}
-
-            {!username && (
-              <>
-                <Link to = "/login">Login</Link>
-                <Link to = "/register">Register</Link>
-              </>
-            )}
-          </nav> */}
-          <button></button>
+          
+          <button id="nav-toggle-button" type="button">
+            <span>Menu</span>
+          </button>
       </header>
     )
 }
