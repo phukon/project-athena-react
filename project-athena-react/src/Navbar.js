@@ -17,7 +17,7 @@ export function Navbar({
     return(
         <div className="nav-container" style={{backgroundColor: backgroundColor, color: fontColor}}>
         <nav>
-            <div className="nav-brand">{brand}</div>
+        <Link to='/'><div className="nav-brand">{brand}</div></Link>
             <div className="nav-hamburguer-icon" onClick={() => setMenuClosed(!isMenuClosed)}>☰</div>
             <div className="nav-links">
                 {links.map((node) =>{
@@ -45,7 +45,7 @@ export function Navbar({
 Navbar.defaultProps = {
     backgroundColor : 'white',
     fontColor: 'black',
-    brand: <img src={Images.projectAthena}/>,
+    brand: <img src={Images.projectAthena} alt="logo"/>,
     links:[
         {text: "Home", link:"/"},
         {text: "Resources", link:"/resources"},
