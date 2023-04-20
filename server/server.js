@@ -49,3 +49,7 @@ mongoose.connection.on('error', err => {
     console.log(`Error connecting to MongoDB: ${err}`)
     logEvents(`${err.no}: ${err.code}\t${err.syscall}\t${err.hostname}`, 'mongoErrLog.log')
 })
+  
+mongoose.connection.on('disconnected', () => {
+console.log('Disconnected from MongoDB');
+});
