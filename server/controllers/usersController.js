@@ -70,6 +70,12 @@ const updateUser = asyncHandler(async (req, res) => {
     // check for duplicates
     const duplicate = await User.findOne({username}).lean().exec();
     // allow updates to the original user
+
+    
+    // The additional check duplicate && in
+    //  the original code is used to ensure that
+    //  duplicate is not null or undefined before
+    //  attempting to access its _id property
     if (duplicate && duplicate._id.toString() !== id) {
         return res.status(409).json({message: 'Username already exists!'})
     }
@@ -99,9 +105,9 @@ const deleteUser = asyncHandler(async (req, res) => {
         return res.status(400).json({message: 'User ID is required!'})
     }
 
-    const notes = await Note.find({user: id}).lean().exec();
+    const note = await Note.findOne({user: id}).lean().exec();
 
-    if (notes?.length) {
+    if (note) {
         return res.status(400).json({message: 'Cannot delete, User has assigned notes!'})
     }
 
