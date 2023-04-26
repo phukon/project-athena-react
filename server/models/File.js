@@ -1,13 +1,29 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose")
 
 const FileSchema = new mongoose.Schema({
     path: {
         type: String,
-        required: true
+        required: false
     },
-    name: {
+    fileName: {
         type: String,
-        required: true
+        required: false
+    },
+    file: {
+        type: String,
+        required: false
+    },
+    branch: {
+        type: String,
+        required: false
+    },
+    semester: {
+        type: String,
+        required: false
+    },
+    college: {
+        type: String,
+        required: false
     },
     downloadCount: {
         type: Number,
@@ -16,6 +32,6 @@ const FileSchema = new mongoose.Schema({
     },
 })
 
-const File = mongoose.model('file', FileSchema);
+const File = mongoose.model('File', FileSchema);
 
-export default File;
+module.exports = File;
