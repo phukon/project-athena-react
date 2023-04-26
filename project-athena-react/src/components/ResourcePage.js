@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState} from 'react';
 import { uploadFile } from '../service/api';
 
 import Images from '../assets/Images';
@@ -36,7 +36,7 @@ export default function EventsPage() {
     data.append('semester', option2); //  It's a string! Change type to int
     data.append('college', option3);
 
-    const response = await uploadFile(data);
+    await uploadFile(data);
   }
 
   function convertToBase64(image){
@@ -64,7 +64,7 @@ export default function EventsPage() {
 
       <article id='resource-article-2'>
         <div className="dropdown-container">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} enctype="multipart/form-data">
             <div className="dropdown">
               <select id="branch" value={option1} onChange={handleOption1}>
                 <option disabled selected>Branch</option>
