@@ -5,7 +5,8 @@ logs
 # dependencies
 project-athena-react/node_modules
 server/node_modules
-client/.env
+
+project-athena-react/.env
 server/.env
 server/uploads
 
