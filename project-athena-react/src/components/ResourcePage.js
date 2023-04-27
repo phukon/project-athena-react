@@ -28,10 +28,9 @@ export default function EventsPage() {
   }
 
   const getFiles = async () => {
-    const imageFile = await convertToBase64(file);
     const data = new FormData()
     data.append('fileName', file.name);
-    data.append('file', imageFile);
+    data.append('file', file);
     data.append('branch', option1);
     data.append('semester', option2); //  It's a string! Change type to int
     data.append('college', option3);
@@ -39,20 +38,6 @@ export default function EventsPage() {
     await uploadFile(data);
   }
 
-  function convertToBase64(image){
-    return new Promise((resolve, reject) => {
-      const fileReader = new FileReader();
-      fileReader.readAsDataURL(image);
-
-      fileReader.onload = () => {
-        resolve(fileReader.result);
-      };
-
-      fileReader.onerror = (error) => {
-        reject(error);
-      }
-    })
-  }
 
 
   return (
