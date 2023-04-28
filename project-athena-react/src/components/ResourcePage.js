@@ -4,6 +4,18 @@ import { uploadFile } from '../service/api';
 import Images from '../assets/Images';
 
 export default function EventsPage() {
+
+  const getFiles = async () => {
+    //const imageFile = await convertToBase64(file);
+    const data = new FormData()
+    data.append('fileName', file.name);
+    data.append('file', file);
+    data.append('branch', option1);
+    data.append('semester', option2); //  It's a string! Change type to int
+    data.append('college', option3);
+
+    await uploadFile(data);
+  }
   
   const [option1, setOption1] = useState('branch')
   const [option2, setOption2] = useState('semester')
@@ -25,19 +37,9 @@ export default function EventsPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault()
+    getFiles()
   }
 
-  const getFiles = async () => {
-    //const imageFile = await convertToBase64(file);
-    const data = new FormData()
-    data.append('fileName', file.name);
-    data.append('file', file);
-    data.append('branch', option1);
-    data.append('semester', option2); //  It's a string! Change type to int
-    data.append('college', option3);
-
-    await uploadFile(data);
-  }
 
   // function convertToBase64(image){
   //   return new Promise((resolve, reject) => {
@@ -106,7 +108,7 @@ export default function EventsPage() {
               type="file"
               onChange={(e) => setFile(e.target.files[0])}
             />
-            <button type="submit" className="form-button" id="typeValue" onClick={getFiles}>Let's Go!</button>
+            <button type="submit" className="form-button" id="typeValue">Let's Go!</button>
           </form>
           
         </div>        
