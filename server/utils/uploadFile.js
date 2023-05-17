@@ -10,6 +10,6 @@ const multer = require('multer');
 // })
 
 // const uploadFile = multer({ storage: storage })
-//const uploadFile = multer({ dest: 'uploads/' })
+const uploadFile = multer({ dest: 'uploads/' })
 
 module.exports = uploadFile
