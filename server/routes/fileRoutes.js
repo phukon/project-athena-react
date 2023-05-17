@@ -5,8 +5,7 @@ const uploadFile = require('../utils/uploadFile.js')
 
 
 router.route('/')
-    .post(uploadFile.single('file'),
-    filesController.createFile)
+    .post(filesController.createFile) //uploadFile.single('file') multer middleware
     .get(filesController.getAllFiles)
 
 router.route('/:fileId').get(filesController.getFile)
