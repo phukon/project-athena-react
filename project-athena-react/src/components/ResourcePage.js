@@ -1,5 +1,5 @@
 import { useState} from 'react';
-import { uploadFile } from '../service/api';
+import { fetchFile } from '../service/api';
 
 import Images from '../assets/Images';
 
@@ -8,20 +8,27 @@ export default function EventsPage() {
   const getFiles = async () => {
     //const imageFile = await convertToBase64(file);
     const data = new FormData()
-    data.append('fileName', file.name);
-    data.append('file', file);
+    // data.append('fileName', file.name);
+    // data.append('file', file);
+    data.append('typeOfDocument', option0);
     data.append('branch', option1);
     data.append('semester', option2); //  It's a string! Change type to int
     data.append('college', option3);
 
-    await uploadFile(data);
+    await fetchFile(data);
   }
   
-  const [option1, setOption1] = useState('branch')
-  const [option2, setOption2] = useState('semester')
-  const [option3, setOption3] = useState('college')
+  const [option0, setOption0] = useState('question_papers')
+  const [option1, setOption1] = useState('etc')
+  const [option2, setOption2] = useState('8')
+  const [option3, setOption3] = useState('jist')
 
-  const [file, setFile] = useState(null);
+  // const [file, setFile] = useState(null);
+
+
+  const handleOption0 = (event)=> {
+    setOption0(event.target.value)
+  }
 
   const handleOption1 = (event)=> {
     setOption1(event.target.value)
@@ -68,6 +75,15 @@ export default function EventsPage() {
         <div className="dropdown-container">
           <form onSubmit={handleSubmit} enctype="multipart/form-data">
             <div className="dropdown">
+
+            <div className="dropdown">
+              <select id="typeOfDocument" value={option0} onChange={handleOption0}>
+                <option disabled selected>Branch</option>
+                <option value="notes">Notes</option>
+                <option value="question_papers">Question Papers</option>
+              </select>
+            </div>
+
               <select id="branch" value={option1} onChange={handleOption1}>
                 <option disabled selected>Branch</option>
                 <option value="etc">ETC</option>
@@ -104,10 +120,10 @@ export default function EventsPage() {
                   <option value="8">TU</option>
                 </select>
             </div>
-            <input
+            {/* <input
               type="file"
               onChange={(e) => setFile(e.target.files[0])}
-            />
+            /> */}
             <button type="submit" className="form-button" id="typeValue">Let's Go!</button>
           </form>
           
