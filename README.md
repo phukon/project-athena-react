@@ -2,15 +2,12 @@
 
 ## A platform for listing question papers, academic resources and college events.
 
-- Headless cms
+- Headless cms for content delivery
+- node.js for users management
 
 ## Future Development
-- Use of environment variables
-- Hide the API key.
 - Set up the Alumni section
 - Set up servers in the campus
-- Improve the design and layout of the website.
-- Implement using ReactJS-Tailwind or NextJS-Tailwind.
 - O-Auth
 - Blog
 
