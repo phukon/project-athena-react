@@ -1,8 +1,8 @@
 import axios from 'axios';
 
+const projectId = "jbb9mv51"
+const dataset = "production"
 
-let PROJECT_ID = "jbb9mv51";
-let DATASET = "production";
 
 
 export const fetchFile = async (data) => {
@@ -15,7 +15,8 @@ export const fetchFile = async (data) => {
 
         let QUERY = encodeURIComponent(`*[_type == "${typeOfDocument}" && college == "${college}" && type == "${type}"]{name, college, type, file, description, "pdfUrl": file.asset->url}`);
 
-        const response = await axios.get(`https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`, data);
+        const response = await axios.get(`https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${QUERY}`, data);
+        console.log(projectId);
         return response.data.result;
     } catch (error) {
         console.log('Error while calling the API ', error.message);
