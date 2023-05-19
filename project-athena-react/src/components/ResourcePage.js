@@ -5,6 +5,12 @@ import Images from '../assets/Images';
 
 export default function EventsPage() {
 
+  const [option0, setOption0] = useState('question_papers')
+  const [option1, setOption1] = useState('etc')
+  const [option2, setOption2] = useState('8')
+  const [option3, setOption3] = useState('jist')
+  const [renderData, setRenderData] = useState([]);
+
   const getFiles = async () => {
     //const imageFile = await convertToBase64(file);
     const data = new FormData()
@@ -15,13 +21,19 @@ export default function EventsPage() {
     data.append('semester', option2); //  It's a string! Change type to int
     data.append('college', option3);
 
-    await fetchFile(data);
+    const returnedData = await fetchFile(data);
+
+    const renderedItems = returnedData.map((item, index) => (
+      <div key={index}>
+        <h3><a href= {item.pdfUrl} target="_blank" rel="noopener noreferrer">{item.name}</a></h3>
+        <p>{item.description}</p>
+        {/* Other content */}
+      </div>
+    ));
+
+    setRenderData(renderedItems)
   }
   
-  const [option0, setOption0] = useState('question_papers')
-  const [option1, setOption1] = useState('etc')
-  const [option2, setOption2] = useState('8')
-  const [option3, setOption3] = useState('jist')
 
   // const [file, setFile] = useState(null);
 
@@ -110,14 +122,14 @@ export default function EventsPage() {
             <div className="dropdown">
               <select id="college" value={option3} onChange={handleOption3}>
                   <option disabled selected>College</option>
-                  <option value="1">JIST</option>
-                  <option value="2">JEC</option>
-                  <option value="3">AEC</option>
-                  <option value="4">BBEC</option>
-                  <option value="5">DEC</option>
-                  <option value="6">BVEC</option>
-                  <option value="7">GIMT</option>
-                  <option value="8">TU</option>
+                  <option value="jist">JIST</option>
+                  <option value="jec">JEC</option>
+                  <option value="aec">AEC</option>
+                  <option value="bbec">BBEC</option>
+                  <option value="dec">DEC</option>
+                  <option value="bvec">BVEC</option>
+                  <option value="gimt">GIMT</option>
+                  <option value="tu">TU</option>
                 </select>
             </div>
             {/* <input
@@ -126,7 +138,7 @@ export default function EventsPage() {
             /> */}
             <button type="submit" className="form-button" id="typeValue">Let's Go!</button>
           </form>
-          
+          <div>{renderData}</div>
         </div>        
       </article>
 

@@ -16,7 +16,7 @@ export const fetchFile = async (data) => {
         let QUERY = encodeURIComponent(`*[_type == "${typeOfDocument}" && college == "${college}" && type == "${type}"]{name, college, type, file, description, "pdfUrl": file.asset->url}`);
 
         const response = await axios.get(`https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`, data);
-        //return response.data;
+        return response.data.result;
     } catch (error) {
         console.log('Error while calling the API ', error.message);
     }
