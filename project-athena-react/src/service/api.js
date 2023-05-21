@@ -13,11 +13,17 @@ export const fetchFile = async (data) => {
         const semester = data.get('semester');
         const type = `${branch}-${semester}`
 
-        let QUERY = encodeURIComponent(`*[_type == "${typeOfDocument}" && college == "${college}" && type == "${type}"]{name, college, type, file, description, "pdfUrl": file.asset->url}`);
+        let QUERY1 = encodeURIComponent(`*[_type == "${typeOfDocument}" && college == "${college}" && type == "${type}"]{name, college, type, file, description, "pdfUrl": file.asset->url}`);
+        let QUERY2 = encodeURIComponent(`*[_type == "${typeOfDocument}" && type == "${type}"]{name, college, type, file, description, "pdfUrl": file.asset->url}`);
 
-        const response = await axios.get(`https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${QUERY}`, data);
-        console.log(projectId);
-        return response.data.result;
+        if(typeOfDocument == "notes") {
+            const response = await axios.get(`https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${QUERY1}`, data)
+            return response.data.result;
+        } else {
+            const response = await axios.get(`https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${QUERY2}`, data)
+            return response.data.result;
+        }
+        
     } catch (error) {
         console.log('Error while calling the API ', error.message);
     }

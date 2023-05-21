@@ -5,10 +5,11 @@ import Images from '../assets/Images';
 
 export default function EventsPage() {
 
-  const [option0, setOption0] = useState('question_papers')
+  const [option0, setOption0] = useState('notes')
   const [option1, setOption1] = useState('etc')
   const [option2, setOption2] = useState('8')
   const [option3, setOption3] = useState('jist')
+  const [showCollegeSelect, setShowCollegeSelect] = useState(true)
   const [renderData, setRenderData] = useState([]);
 
   const getFiles = async () => {
@@ -40,6 +41,11 @@ export default function EventsPage() {
 
   const handleOption0 = (event)=> {
     setOption0(event.target.value)
+    if(event.target.value === "question_papers") {
+      setShowCollegeSelect(false)
+    } else {
+      setShowCollegeSelect(true)
+    }
   }
 
   const handleOption1 = (event)=> {
@@ -90,7 +96,7 @@ export default function EventsPage() {
 
             <div className="dropdown">
               <select id="typeOfDocument" value={option0} onChange={handleOption0}>
-                <option disabled selected>Branch</option>
+                <option disabled selected>Type</option>
                 <option value="notes">Notes</option>
                 <option value="question_papers">Question Papers</option>
               </select>
@@ -119,19 +125,23 @@ export default function EventsPage() {
               </select>
             </div>
             
-            <div className="dropdown">
-              <select id="college" value={option3} onChange={handleOption3}>
-                  <option disabled selected>College</option>
-                  <option value="jist">JIST</option>
-                  <option value="jec">JEC</option>
-                  <option value="aec">AEC</option>
-                  <option value="bbec">BBEC</option>
-                  <option value="dec">DEC</option>
-                  <option value="bvec">BVEC</option>
-                  <option value="gimt">GIMT</option>
-                  <option value="tu">TU</option>
-                </select>
-            </div>
+            {showCollegeSelect && (
+              <div className="dropdown">
+                <select id="college" value={option3} onChange={handleOption3}>
+                    <option disabled selected>College</option>
+                    <option value="jist">JIST</option>
+                    <option value="jec">JEC</option>
+                    <option value="aec">AEC</option>
+                    <option value="bbec">BBEC</option>
+                    <option value="dec">DEC</option>
+                    <option value="bvec">BVEC</option>
+                    <option value="gimt">GIMT</option>
+                    <option value="tu">TU</option>
+                  </select>
+              </div>
+            )}
+
+            
             {/* <input
               type="file"
               onChange={(e) => setFile(e.target.files[0])}
