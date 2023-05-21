@@ -5,11 +5,11 @@ import Images from '../assets/Images';
 
 export default function EventsPage() {
 
-  const [option0, setOption0] = useState('notes')
+  const [option0, setOption0] = useState('question_papers')
   const [option1, setOption1] = useState('etc')
   const [option2, setOption2] = useState('8')
   const [option3, setOption3] = useState('jist')
-  const [showCollegeSelect, setShowCollegeSelect] = useState(true)
+  const [showCollegeSelect, setShowCollegeSelect] = useState(false)
   const [renderData, setRenderData] = useState([]);
 
   const getFiles = async () => {
@@ -44,10 +44,10 @@ export default function EventsPage() {
 
   const handleOption0 = (event)=> {
     setOption0(event.target.value)
-    if(event.target.value === "question_papers") {
-      setShowCollegeSelect(false)
-    } else {
+    if(event.target.value === "notes") {
       setShowCollegeSelect(true)
+    } else {
+      setShowCollegeSelect(false)
     }
   }
 
