@@ -259,6 +259,9 @@ main {
     margin-top: 2rem;
     border-top: 2px solid;
     padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
   .renderedData > div{
     display: flex;
@@ -269,7 +272,7 @@ main {
     border-radius: 15px;
     box-shadow: 9px 8px 0px;
     height: 8rem;
-    width: 90rem;
+    width: 25rem;
     display:flex;
     justify-content: center;
     align-items: center;
