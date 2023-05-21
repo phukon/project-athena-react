@@ -210,9 +210,11 @@ main {
     font-size: 45px;
   }
 
-  #resource-article-1 > h1, p {
+  #resource-article-1 > p,
+  #resource-article-1 > h1 {
     color: #ffffff;
-  }
+}
+
 
   #resource-article-2 {
     padding-top: 1rem;
@@ -734,9 +736,10 @@ main {
     font-size: 18px;
   }
 
-  #resource-article-1 > h1, p {
+  #resource-article-1 > p,
+  #resource-article-1 > h1 {
     color: #ffffff;
-  }
+}
 
   .dropdown-container{
     background-color: #ffffff;
