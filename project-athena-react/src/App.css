@@ -549,4 +549,38 @@ main {
     transition: transform 0.3s;
     transform: none;
   }
+
+  .dropdown-container{
+    background-color: #ffffff;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 9px 8px 0px;
+    height: 12rem;
+    width: 22rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-button {
+    background-color: #ffcf26;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    border-radius: 15px;
+    border:  2px solid;
+    border-color: black;
+    padding: 0.6rem;
+    font-weight: 700;
+  }
+
+  select {
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.3rem;
+    width: 10rem;
+    border: none;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #555;
+  }
 }

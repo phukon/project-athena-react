@@ -148,10 +148,11 @@ export default function EventsPage() {
             /> */}
             <button type="submit" className="form-button" id="typeValue">Let's Go!</button>
           </form>
-          <div>{renderData}</div>
-        </div>        
+        </div>       
       </article>
 
+      <div>{renderData}</div>  
+      
       <article className="article-6" id='event-article-4'>
           <img src={Images.elon5} alt=""/>
           <h1>Suit Up, Students</h1>
