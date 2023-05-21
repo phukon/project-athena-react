@@ -550,13 +550,20 @@ main {
     transform: none;
   }
 
+  #resource-article-2 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+  }
+
   .dropdown-container{
     background-color: #ffffff;
     border: 2px solid;
     border-radius: 15px;
     box-shadow: 9px 8px 0px;
     height: 12rem;
-    width: 22rem;
+    width: 18rem;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -582,5 +589,42 @@ main {
     background-color: #ffffff;
     font-size: 16px;
     color: #555;
+  }
+
+  .renderedData {
+    margin-top: 2rem;
+    border-top: 2px solid;
+  }
+  .renderedData > div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 9px 8px 0px;
+    height: 8rem;
+    width: 23rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .renderedData > div > h3 {
+    margin-top: -1.5rem;
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  #dateAndUser > span {
+    color: #555;
+    font-weight:lighter;
+    font-style: italic;
+    padding-right: 1rem;
+  }
+
+  #dateAndUser {
+    display: flex;
+    flex-direction: row;
   }
 }

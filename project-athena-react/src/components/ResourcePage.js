@@ -27,8 +27,11 @@ export default function EventsPage() {
     const renderedItems = returnedData.map((item, index) => (
       <div key={index}>
         <h3><a href= {item.pdfUrl} target="_blank" rel="noopener noreferrer">{item.name}</a></h3>
+        <div id='dateAndUser'>
+          <span>Date: 21e2</span>
+          <span>by riki</span>
+        </div>
         <p>{item.description}</p>
-        {/* Other content */}
       </div>
     ));
 
@@ -149,9 +152,10 @@ export default function EventsPage() {
             <button type="submit" className="form-button" id="typeValue">Let's Go!</button>
           </form>
         </div>       
+        <div className='renderedData'>{renderData}</div> 
       </article>
 
-      <div>{renderData}</div>  
+       
       
       <article className="article-6" id='event-article-4'>
           <img src={Images.elon5} alt=""/>
