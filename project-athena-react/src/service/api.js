@@ -16,11 +16,11 @@ export const fetchFile = async (data) => {
         let QUERY1 = encodeURIComponent(`*[_type == "${typeOfDocument}" && college == "${college}" && type == "${type}"]{name, college, type, file, description, "pdfUrl": file.asset->url}`);
         let QUERY2 = encodeURIComponent(`*[_type == "${typeOfDocument}" && type == "${type}"]{name, college, type, file, description, "pdfUrl": file.asset->url}`);
 
-        if(typeOfDocument == "notes") {
-            const response = await axios.get(`https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${QUERY1}`, data)
+        if(typeOfDocument == "notes") { //ignore eqeqeq error
+            const response = await axios.get(`https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${QUERY1}`)
             return response.data.result;
         } else {
-            const response = await axios.get(`https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${QUERY2}`, data)
+            const response = await axios.get(`https://${projectId}.api.sanity.io/v2021-10-21/data/query/${dataset}?query=${QUERY2}`)
             return response.data.result;
         }
         

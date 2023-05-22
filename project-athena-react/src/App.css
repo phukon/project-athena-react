@@ -325,6 +325,69 @@ main {
     align-items: center;
   }
 
+  /* contributor page */
+
+  #contributor-article-1{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    background-color:#376fff;
+    font-size: 45px;
+  }
+
+  #contributor-article-1 > p,
+  #contributor-article-1 > h1 {
+    color: #ffffff;
+}
+
+  #contributor-article-2 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    margin: 2rem;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contributor {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 9px 8px 0px;
+    height: 28rem;
+    width: 25rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .content-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #content {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  
+  .small-image {
+    height: 10rem;
+    width: 10rem;
+  }
+
+
+
+  
+  /* end of contributor page */
+
   .form-button {
     background-color: #ffcf26;
     margin-left: 2.5rem;

@@ -41,7 +41,7 @@ export default function EventsPage() {
         </div>
       </article>
 
-      <article class="article-6" id='event-article-4'>
+      <article className="article-6" id='event-article-4'>
           <img src={Images.elon5} alt=""/>
           <h1>Suit Up, Students</h1>
           <p>Upload Your Resources and Help Your Peers Reach New Heights of Academic Excellence</p>

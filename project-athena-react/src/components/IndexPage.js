@@ -7,7 +7,7 @@ export default function IndexPage() {
     return (
        <main>
             <article id="article-1">
-                <div id="content-1"><p>We're <span class="yellow-underline">just a bunch of sleep-deprived college students</span> trying to make it through our degrees without becoming permanently caffeinated. But hey, at least we're doing it together!</p></div>
+                <div id="content-1"><p>We're <span className="yellow-underline">just a bunch of sleep-deprived college students</span> trying to make it through our degrees without becoming permanently caffeinated. But hey, at least we're doing it together!</p></div>
                 <div id="images">
                     <img src={Images.elon} alt = 'elons' id="image-1"/>
                 </div>
@@ -47,7 +47,7 @@ export default function IndexPage() {
                     <Link to="/community"><button>Explore</button></Link>
                 </div>
             </article>
-            <article class="article-6">
+            <article className="article-6">
                 <img src={Images.elon4} alt=""/>
                 <h1>Your Contribution Matters</h1>
                 <p>Help Us Create a Resource Hub That Rocks!</p>
