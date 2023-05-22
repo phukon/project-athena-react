@@ -200,6 +200,8 @@ main {
     transform: none;
   }
 
+  /* Resource page */
+
   #resource-article-1{
     display: flex;
     flex-direction: column;
@@ -221,8 +223,62 @@ main {
     display: flex;
     flex-direction: column;
     align-items:center;
-
   }
+
+  /* Event Page */
+
+  #event-article-1 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    background-color:#ffcf26;
+    font-size: 45px;
+  }
+
+  #event-article-2 {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+
+  #event-data {
+    margin-top: 2rem;
+    border-top: 2px solid;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+ /* Fetched event data */
+
+  .square-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 9px 8px 0px;
+    height: 8rem;
+    width: 25rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Date and college */
+
+  #details > span {
+    color: #555;
+    font-weight:lighter;
+    font-style: italic;
+    padding-right: 1rem;
+  }
+ /* ----------------------- */
 
   .dropdown-container{
     background-color: #ffffff;
@@ -810,5 +866,37 @@ main {
   #dateAndUser {
     display: flex;
     flex-direction: row;
+  }
+
+  #event-article-1 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    background-color:#ffcf26;
+    font-size: 18px;
+  }
+
+  .square-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 9px 8px 0px;
+    height: 8rem;
+    width: 23rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #details > span {
+    color: #555;
+    font-weight:lighter;
+    font-style: italic;
+    padding-right: 1rem;
   }
 }

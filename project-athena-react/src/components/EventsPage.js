@@ -11,36 +11,34 @@ export default function EventsPage() {
       </article>
 
       <article id='event-article-2'>
-        <div className='square-box'>
-          <div>
-            <p>A talk on marketing.</p>
+        <div id='event-data'>
+          <div className='square-box'>
+            <div>
+              <h3>A talk on marketing.</h3>
+            </div>
+            <div id='details'>
+              <span>3 March 2023</span><span>JIST</span>
+            </div>
           </div>
-          <div id='details'>
-            <span>3 March 2023</span><span>JIST</span>
+
+          <div className='square-box'>
+            <div>
+              <h3>A talk on marketing.</h3>
+            </div>
+            <div id='details'>
+              <span>3 March 2023</span><span>JIST</span>
+            </div>
+          </div>
+
+          <div className='square-box'>
+            <div>
+              <h3>A talk on marketing.</h3>
+            </div>
+            <div id='details'>
+              <span>3 March 2023</span><span>JIST</span>
+            </div>
           </div>
         </div>
-
-        <div className='square-box'>
-          <div>
-            <p>A talk on marketing.</p>
-          </div>
-          <div id='details'>
-            <span>3 March 2023</span><span>JIST</span>
-          </div>
-        </div>
-
-        <div className='square-box'>
-          <div>
-            <p>A talk on marketing.</p>
-          </div>
-          <div id='details'>
-            <span>3 March 2023</span><span>JIST</span>
-          </div>
-        </div>
-      </article>
-
-      <article id='event-article-3'>  
-        <h1>will populate later //////////Content//////////</h1>
       </article>
 
       <article class="article-6" id='event-article-4'>

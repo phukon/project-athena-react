@@ -1,5 +1,7 @@
 import React from "react"
 import Images from "../assets/Images"
+import { Link } from 'react-router-dom';
+
 
 export default function IndexPage() {
     return (
@@ -26,7 +28,7 @@ export default function IndexPage() {
                     <img src={Images.elon2} alt=""/>
                     <h1>Study Smarter, Not Harder</h1>
                     <p>Share and Discover Resources for Your Academic Success</p>
-                    <button>Explore</button>
+                    <Link to="/resources"><button>Explore</button></Link>
                 </div>
             </article>
             <article id="article-4">
@@ -34,7 +36,7 @@ export default function IndexPage() {
                     <img src={Images.elon3} alt=""/>
                     <h1>Academic Extravaganza</h1>
                     <p>Get Excited for Upcoming Events and Opportunities</p>
-                    <button>Explore</button>
+                    <Link to="/events"><button>Explore</button></Link>
                 </div>
             </article>
             <article id="article-5">
@@ -42,7 +44,7 @@ export default function IndexPage() {
                     <img src={Images.elon3} alt=""/>
                     <h1>The A-Team</h1>
                     <p>Join a Thriving Community of High Achieving Students</p>
-                    <button>Explore</button>
+                    <Link to="/community"><button>Explore</button></Link>
                 </div>
             </article>
             <article class="article-6">
