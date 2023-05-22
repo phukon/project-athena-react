@@ -278,7 +278,40 @@ main {
     font-style: italic;
     padding-right: 1rem;
   }
- /* ----------------------- */
+
+ /* --------end of event page------- */
+
+
+/* community page */
+
+ #community-article-1 {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  background-color: black;
+  font-size: 45px;
+  text-align: center;
+ }
+
+ #community-article-1 > p,
+  #community-article-1 > h1 {
+    color: #ffffff;
+}
+
+#community-article-2 {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  margin: 2rem;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* -------end of community page------- */
 
   .dropdown-container{
     background-color: #ffffff;
@@ -775,6 +808,8 @@ main {
     transform: none;
   }
 
+    /* resource page */
+
   #resource-article-2 {
     display: flex;
     flex-direction: column;
@@ -790,6 +825,7 @@ main {
     padding-bottom: 6rem;
     background-color:#376fff;
     font-size: 18px;
+    text-align: center;
   }
 
   #resource-article-1 > p,
@@ -868,6 +904,10 @@ main {
     flex-direction: row;
   }
 
+/* end of resource page */
+
+/* events page */
+
   #event-article-1 {
     display: flex;
     flex-direction: column;
@@ -876,6 +916,7 @@ main {
     padding-bottom: 6rem;
     background-color:#ffcf26;
     font-size: 18px;
+    text-align: center;
   }
 
   .square-box {
@@ -899,4 +940,36 @@ main {
     font-style: italic;
     padding-right: 1rem;
   }
+
+    /* end of event page */
+
+  /* community page */
+
+  #community-article-1 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    background-color:black;
+    font-size: 18px;
+    text-align: center;
+   }
+  
+   #community-article-1 > p,
+    #community-article-1 > h1 {
+      color: #ffffff;
+  }
+
+  #community-article-2 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    margin: 2rem;
+    font-size: 18px;
+    text-align: center;
+  }
+    /* end of community page */
 }
