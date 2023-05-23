@@ -1,15 +1,17 @@
 # Project Athena
 
-## A platform for listing question papers, academic resources and college events.
+## Academic Resource and Networking Platform for Students and Alumni.
 
 - Headless cms for content delivery
 - node.js for users management
 
 ## Future Development
+- Blog
+- Live events
 - Set up the Alumni section
 - Set up servers in the campus
 - O-Auth
-- Blog
+
 
 ### License
 MIT License
