@@ -9,7 +9,7 @@ import Layout from './Layout';
 // import Contributors from './components/Contributors';
 // import Contact from './components/ContactUs';
 // import Contribute from './components/Contribute';
-import { IndexPage, LoginPage, ResourcePage, EventsPage, CommunityPage, RegisterPage, Contributors, Contact, Contribute } from "./components/Index";
+import { IndexPage, LoginPage, ResourcePage, EventsPage, CommunityPage, RegisterPage, Contributors, Contact, Contribute, PageNotFound } from "./components/Index";
 
 import { UserContextProvider } from './UserContext';
 import './App.css';
@@ -31,6 +31,7 @@ function App() {
               <Route path='/contact' element = {<Contact/>}/>
               <Route path='/contributors' element = {<Contributors/>}/>
               <Route path='/contribute' element = {<Contribute/>}/>
+              <Route path= '*' element= {<PageNotFound/>} />
           </Route>
         </Routes>
     </UserContextProvider>

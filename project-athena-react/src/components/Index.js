@@ -7,6 +7,7 @@ import RegisterPage from './RegisterPage';
 import Contributors from './Contributors';
 import Contact from './ContactUs';
 import Contribute from './Contribute';
+import PageNotFound from './PageNotFound';
 
 export {
   IndexPage,
@@ -18,4 +19,5 @@ export {
   Contributors,
   Contact,
   Contribute,
+  PageNotFound
 };
