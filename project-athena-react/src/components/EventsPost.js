@@ -46,10 +46,10 @@ const EventsPost = () => {
             <p>Subheading</p>
           </article>
 
-          <article id="event-post-article">
-            <img src="" alt="" className="event-post-image" />
+          <div id="event-post-article">
+            <img src={post.imageUrl} alt="" className="event-post-image"/>
             {post.body && <BlockContent blocks={post.body} projectId = {projectId} dataset ={dataset} />}
-          </article>
+          </div>
         </>
       )}
     </main>
