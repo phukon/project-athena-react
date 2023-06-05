@@ -52,6 +52,6 @@ Navbar.defaultProps = {
         {text: "Events", link:"/events"},
         {text: "Community", link:"/community"},
         {text: "Contributors", link:"/contributors"},
-        {text: "Contact Us", link:"/contact"}
+        {text: "Blog", link:"/blog"},
     ]
 }

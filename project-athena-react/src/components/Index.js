@@ -8,6 +8,9 @@ import Contributors from './Contributors';
 import Contact from './ContactUs';
 import Contribute from './Contribute';
 import PageNotFound from './PageNotFound';
+import EventsPost from './EventsPost'
+import Blog from './Blog'
+import BlogPosts from './BlogPosts'
 
 export {
   IndexPage,
@@ -19,5 +22,8 @@ export {
   Contributors,
   Contact,
   Contribute,
-  PageNotFound
+  PageNotFound,
+  EventsPost,
+  Blog,
+  BlogPosts
 };

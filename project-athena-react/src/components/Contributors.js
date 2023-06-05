@@ -18,7 +18,7 @@ export default function Contributors() {
       console.log('Error while calling the API ', error.message);
       return [];
     }
-  };
+  }
 
   useEffect(() => {
     const getFiles = async () => {

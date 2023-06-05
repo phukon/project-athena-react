@@ -1,15 +1,6 @@
 import {Route, Routes} from 'react-router-dom';
 import Layout from './Layout';
-// import IndexPage from "./components/IndexPage";
-// import LoginPage from './components/LoginPage';
-// import ResourcePage from './components/ResourcePage';
-// import EventsPage from './components/EventsPage';
-// import CommunityPage from './components/CommunityPage';
-// import RegisterPage from './components/RegisterPage';
-// import Contributors from './components/Contributors';
-// import Contact from './components/ContactUs';
-// import Contribute from './components/Contribute';
-import { IndexPage, LoginPage, ResourcePage, EventsPage, CommunityPage, RegisterPage, Contributors, Contact, Contribute, PageNotFound } from "./components/Index";
+import { IndexPage, LoginPage, ResourcePage, EventsPage, CommunityPage, RegisterPage, Contributors, Contribute, PageNotFound, EventsPost, BlogPosts, Blog } from "./components/Index";
 
 import { UserContextProvider } from './UserContext';
 import './App.css';
@@ -27,8 +18,10 @@ function App() {
               <Route path='/register' element = {<RegisterPage/>}/>
               <Route path='/resources' element = {<ResourcePage/>}/>
               <Route path='/events' element = {<EventsPage/>}/>
+              <Route path="/events/:id" element={<EventsPost/>} />
               <Route path='/community' element = {<CommunityPage/>}/>
-              <Route path='/contact' element = {<Contact/>}/>
+              <Route path='/blog' element = {<Blog/>}/>
+              <Route path="/blog/:id" element={<BlogPosts />} />
               <Route path='/contributors' element = {<Contributors/>}/>
               <Route path='/contribute' element = {<Contribute/>}/>
               <Route path= '*' element= {<PageNotFound/>} />

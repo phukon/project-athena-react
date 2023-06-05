@@ -23,6 +23,8 @@ main {
   overflow: hidden;
 }
 
+/* Desktop*/
+
 @media(min-width: 770px) {
   main > article {
     display: grid;
@@ -267,6 +269,13 @@ main {
     width: 25rem;
     display:flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  #event-post-article {
+    display:flex;
+    flex-direction: column;
+    margin: 8rem;
     align-items: center;
   }
 
