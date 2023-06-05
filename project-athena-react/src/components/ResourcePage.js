@@ -41,7 +41,7 @@ export default function EventsPage() {
         </div>
       ))
       setRenderData(renderedItems);
-    }
+    }   
 
     setIsLoading(false)
   }
