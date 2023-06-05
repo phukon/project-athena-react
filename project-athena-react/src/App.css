@@ -268,7 +268,7 @@ main {
     height: 8rem;
     width: 25rem;
     display:flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
   }
 
