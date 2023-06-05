@@ -5,6 +5,7 @@ import Images from '../assets/Images';
 
 export default function EventsPage() {
 
+  const [isLoading, setIsLoading] = useState(false);
   const [option0, setOption0] = useState('question_papers')
   const [option1, setOption1] = useState('etc')
   const [option2, setOption2] = useState('8')
@@ -13,6 +14,7 @@ export default function EventsPage() {
   const [renderData, setRenderData] = useState([]);
 
   const getFiles = async () => {
+    setIsLoading(true)
     //const imageFile = await convertToBase64(file);
     const data = new FormData()
     // data.append('fileName', file.name);
@@ -24,18 +26,24 @@ export default function EventsPage() {
 
     const returnedData = await fetchFile(data);
 
-    const renderedItems = returnedData.map((item, index) => (
-      <div key={index}>
-        <h3><a href= {item.pdfUrl} target="_blank" rel="noopener noreferrer">{item.name}</a></h3>
-        <div id='dateAndUser'>
-          <span>Date: 21e2</span>
-          <span>by riki</span>
-        </div>
-        <p>{item.description}</p>
-      </div>
-    ));
+    if (returnedData.length === 0) {
+      setRenderData(<p>We are gathering the resources...</p>);
+    } else {
 
-    setRenderData(renderedItems)
+      const renderedItems = returnedData.map((item, index) => (
+        <div key={index}>
+          <h3><a href= {item.pdfUrl} target="_blank" rel="noopener noreferrer">{item.name}</a></h3>
+          <div id='dateAndUser'>
+            <span>Date: 21e2</span>
+            <span>by riki</span>
+          </div>
+          <p>{item.description}</p>
+        </div>
+      ))
+      setRenderData(renderedItems);
+    }
+
+    setIsLoading(false)
   }
   
 
@@ -152,7 +160,7 @@ export default function EventsPage() {
             <button type="submit" className="form-button" id="typeValue">Let's Go!</button>
           </form>
         </div>       
-        <div className='renderedData'>{renderData}</div> 
+        <div className='renderedData'>{isLoading ? <p>Loading...</p> : renderData}</div> 
       </article>
 
        
