@@ -265,12 +265,25 @@ main {
     border: 2px solid;
     border-radius: 15px;
     box-shadow: 9px 8px 0px;
-    height: 8rem;
-    width: 25rem;
-    display:flex;
-    justify-content: center; 
-    align-items: center;
+    max-width: 30rem;
+    min-height: 15rem;
+    padding: 1rem;
+    
   }
+
+  .imgDesc {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+
+  .descriptionContainer {
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+  
+  
 
   #event-post-article {
     display:flex;
