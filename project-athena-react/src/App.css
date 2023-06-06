@@ -1017,11 +1017,15 @@ main {
     border: 2px solid;
     border-radius: 15px;
     box-shadow: 9px 8px 0px;
-    height: 8rem;
-    width: 23rem;
+    min-height: 8rem;
+    max-width: 22rem;
     display:flex;
+    padding: 1rem;
     justify-content: center;
     align-items: center;
+  }
+  .imgDesc {
+    margin-top: 1rem;
   }
 
   #details > span {
