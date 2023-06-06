@@ -16,7 +16,7 @@ export default function EventsPage() {
     } else {
       const renderedItems = returnedData.map((item, index) => {
         // Resize the image URL
-        const resizedImageUrl = `${item.imageUrl}?fit=fillmax&w=290&h=190`;
+        const resizedImageUrl = `${item.imageUrl}?fit=fillmax&w=290&h=190` // Image has been resized to save bandwidth
 
         return (
           <div className='square-box' key={index}>

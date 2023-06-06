@@ -11,12 +11,26 @@ const EventsPost = () => {
 
   const [post, setPost] = useState(null);
   const { id } = useParams();
+  const [shouldResizeImage, setShouldResizeImage] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShouldResizeImage(window.innerWidth < 540);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initial check on component mount
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const fetchFile = async () => {
       try {
         let QUERY = encodeURIComponent(
-          `*[_type == "eventpost" && slug.current == "${id}"]{title, roles, slug, college, body, "imageUrl": mainImage.asset->url}`
+          `*[_type == "eventpost" && slug.current == "${id}"]{title, roles, slug, college, description, body, postedAt, "imageUrl": mainImage.asset->url}`
         );
 
         const response = await axios.get(
@@ -43,12 +57,19 @@ const EventsPost = () => {
         <>
           <article id="event-article-1">
             <h1>{post.title}</h1>
-            <p>Subheading</p>
+            <div className="dateAndUser">
+                <span>{post.postedAt}</span>
+                <> </>
+                <span>by Admin</span>
+            </div>
           </article>
 
           <div id="event-post-article">
-            <img src={post.imageUrl} alt="" className="event-post-image"/>
-            {post.body && <BlockContent blocks={post.body} projectId = {projectId} dataset ={dataset} />}
+            <img src={`${post.imageUrl}${shouldResizeImage ? '?fit=fill&w=300&h=200' : ''}`} alt="" className="event-post-image"/>
+
+            <div className="block-content-wrapper">
+              <BlockContent blocks={post.body} className="custom-block-content" projectId={projectId} dataset={dataset} />
+            </div>
           </div>
         </>
       )}
