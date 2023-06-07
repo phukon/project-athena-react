@@ -50,8 +50,8 @@ Navbar.defaultProps = {
         {text: "Home", link:"/"},
         {text: "Resources", link:"/resources"},
         {text: "Events", link:"/events"},
+        {text: "Gossips", link:"/gossips"},
         {text: "Community", link:"/community"},
         {text: "Contributors", link:"/contributors"},
-        {text: "Blog", link:"/blog"},
     ]
 }
