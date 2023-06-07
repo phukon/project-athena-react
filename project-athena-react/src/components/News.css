@@ -100,6 +100,8 @@
   #news-article-1 > p,
   #news-article-1 > h1 {
     color: #ffffff;
+    font-size: 22px;
+    font-weight: 900;
   }
 
   .news-box .content-wrapper .block-content {
