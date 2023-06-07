@@ -39,7 +39,14 @@ const NewsPage = () => {
   };
 
   return (
-    <div className="news-page">
+    <main>
+
+      <article id='news-article-1'>
+          <h1>Campus Whispers</h1>
+          <p>Stay in the Loop with the Hottest🔥 Gossips from your College </p>
+      </article>
+
+      <div className="news-page">
       {newsData.map((news, index) => (
         <News
           key={index}
@@ -55,6 +62,7 @@ const NewsPage = () => {
         />
       ))}
     </div>
+    </main>
   );
 };
 

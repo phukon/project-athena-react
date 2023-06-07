@@ -7,7 +7,18 @@ export const fetchEventPosts = async () => {
 
     try {
         let QUERY = encodeURIComponent(
-          `*[_type == "eventpost"]{title, roles, slug, college, body, description, postedAt, "imageUrl": mainImage.asset->url}`
+          `*[_type == "eventpost"]
+          | order(postedAt desc)
+          {
+            title,
+            roles,
+            slug,
+            college,
+            body,
+            description,
+            postedAt,
+            "imageUrl": mainImage.asset->url
+          }`
         );
 
         const response = await axios.get(
