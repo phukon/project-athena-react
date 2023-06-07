@@ -104,6 +104,12 @@
     font-weight: 900;
   }
 
+  .news-box {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 1rem;
+  }
+
   .news-box .content-wrapper .block-content {
     font-size: 17px;
   }
