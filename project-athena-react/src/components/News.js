@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import BlockContent from '@sanity/block-content-to-react';
 import './News.css'; // Import the CSS file for styling
 
-const News = ({ title, content, expanded, onClick, postedAt }) => {
+const News = ({ title, content, expanded, onClick, postedAt, college, roles, imageUrl }) => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
@@ -18,14 +18,25 @@ const News = ({ title, content, expanded, onClick, postedAt }) => {
   return (
     <div className={`news-box ${expanded ? 'expanded' : ''}`} onClick={onClick}>
       <h2>{title}</h2>
-      <p className="posted-at">{postedAt}</p>
+      <div className="category-grid">
+        <p className="posted-at">{postedAt}</p>
+        <p className="posted-at">{college}</p>
+        <p className="posted-at">by {roles}</p>  
+        
+      </div>
       <div className="content-wrapper" style={{ height: `${height}px` }}>
         <div ref={contentRef}>
-          <BlockContent blocks={content} />
+          {imageUrl && <img src={imageUrl} alt="News Image" />}
+          <BlockContent
+            blocks={content}
+            renderContainerOnSingleChild={true}
+            className="block-content"
+          />
         </div>
       </div>
     </div>
   );
+  
 };
 
 export default News;

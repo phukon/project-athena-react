@@ -1,22 +1,72 @@
+.news-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
 .news-box {
-    border: 1px solid #ccc;
-    padding: 10px;
-    cursor: pointer;
-    transition: height 0.3s;
-    overflow: hidden;
-  }
-  
-  .news-box.expanded {
-    height: auto;
-  }
-  
-  .news-box .content-wrapper {
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s;
-  }
-  
-  .news-box.expanded .content-wrapper {
-    height: auto;
-  }
-  
+  max-width: 45rem; 
+  border: none;
+  outline: none;
+  padding: 1rem;
+  cursor: pointer;
+  transition: height 0.3s;
+  overflow: hidden;
+  box-sizing: border-box; /* Include border and padding in box dimensions */
+  text-align: justify; /* Align the heading to the left */
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+
+.news-box .category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Arrange items in a grid of four columns */
+  gap: 0.5rem; /* Add spacing between grid items */
+}
+
+.news-box .content-wrapper .block-content img {
+  max-width: 100%; /* Set a maximum width for the image */
+  margin-bottom: 1rem; /* Add spacing between the image and body content */
+}
+
+.news-box .content-wrapper .block-content p {
+  margin-bottom: 0.5rem; /* Add spacing between paragraphs in the body content */
+}
+
+
+
+.news-box.expanded {
+  height: auto;
+  overflow: visible; /* Show overflowing content when expanded */
+}
+
+.news-box .content-wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+  margin-top: 1rem;
+}
+
+.news-box.expanded .content-wrapper {
+  height: auto;
+  overflow: visible; /* Show overflowing content when expanded */
+}
+
+.news-box .posted-at {
+  text-align: left; /* Align the postedAt data to the left */
+  margin-top: 0.5rem; /* Add spacing between the title and the postedAt data */
+}
+
+
+.news-box .content-wrapper .block-content {
+  text-align: justify; /* Align the body content to justify */
+  max-width: 45rem; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.news-box .content-wrapper .block-content > *:not(:last-child) {
+  margin-bottom: 1rem; /* Add desired spacing between content blocks */
+}

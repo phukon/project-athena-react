@@ -32,6 +32,9 @@ const NewsPage = () => {
           title={news.title}
           content={news.body}
           postedAt={news.postedAt}
+          college={news.college}
+          roles={news.roles}
+          imageUrl={news.imageUrl}
           expanded={index === expandedNewsIndex}
           onClick={() => handleNewsClick(index)}
         />
