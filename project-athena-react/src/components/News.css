@@ -1,0 +1,22 @@
+.news-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: height 0.3s;
+    overflow: hidden;
+  }
+  
+  .news-box.expanded {
+    height: auto;
+  }
+  
+  .news-box .content-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+  }
+  
+  .news-box.expanded .content-wrapper {
+    height: auto;
+  }
+  

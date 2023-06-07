@@ -1,6 +1,6 @@
 import {Route, Routes} from 'react-router-dom';
 import Layout from './Layout';
-import { IndexPage, LoginPage, ResourcePage, EventsPage, CommunityPage, RegisterPage, Contributors, Contribute, PageNotFound, EventsPost, BlogPosts, Blog } from "./components/Index";
+import { IndexPage, LoginPage, ResourcePage, EventsPage, CommunityPage, RegisterPage, Contributors, Contribute, PageNotFound, EventsPost, BlogPosts, Blog, NewsPage } from "./components/Index";
 
 import { UserContextProvider } from './UserContext';
 import './App.css';
@@ -24,6 +24,7 @@ function App() {
               <Route path="/blog/:id" element={<BlogPosts />} />
               <Route path='/contributors' element = {<Contributors/>}/>
               <Route path='/contribute' element = {<Contribute/>}/>
+              <Route path='/news' element = {<NewsPage/>}/>
               <Route path= '*' element= {<PageNotFound/>} />
           </Route>
         </Routes>

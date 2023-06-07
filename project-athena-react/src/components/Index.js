@@ -11,6 +11,8 @@ import PageNotFound from './PageNotFound';
 import EventsPost from './EventsPost'
 import Blog from './Blog'
 import BlogPosts from './BlogPosts'
+import News from "./News";
+import NewsPage from "./NewsPage";
 
 export {
   IndexPage,
@@ -25,5 +27,7 @@ export {
   PageNotFound,
   EventsPost,
   Blog,
-  BlogPosts
+  BlogPosts,
+  NewsPage,
+  News
 };
