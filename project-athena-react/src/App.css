@@ -1,7 +1,9 @@
 :root {
   --background-color: rgb(255, 255, 255);
   --border-color: rgb(0, 0, 0);
+   /* It's like defining functions. These variables can be resued later*/
 }
+
 
 h1, h2, h3, a, p, span {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

@@ -28,9 +28,14 @@
 }
 
 .news-box .content-wrapper .block-content img {
-  max-width: 100%; /* Set a maximum width for the image */
-  margin-bottom: 1rem; /* Add spacing between the image and body content */
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  margin-bottom: 1rem;
+  object-fit: contain; /* Preserve the aspect ratio of the image */
 }
+
+
 
 .news-box .content-wrapper .block-content p {
   margin-bottom: 0.5rem; /* Add spacing between paragraphs in the body content */
