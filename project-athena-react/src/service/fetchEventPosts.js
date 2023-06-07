@@ -16,6 +16,7 @@ export const fetchEventPosts = async () => {
             college,
             body,
             description,
+            stats,
             postedAt,
             "imageUrl": mainImage.asset->url
           }`

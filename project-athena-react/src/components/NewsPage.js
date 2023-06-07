@@ -56,6 +56,7 @@ const NewsPage = () => {
           college={news.college}
           roles={news.roles}
           slug={news.slug.current}
+          stats={news.stats}
 
           imageUrl={`${news.imageUrl}${shouldResizeImage ? '?fit=fill&w=300&h=200' : '?auto=format&w=500&h=400'}`} // to reduce load time and save bandwidth
           expanded={index === expandedNewsIndex}

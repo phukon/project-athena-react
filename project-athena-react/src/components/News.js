@@ -3,7 +3,7 @@ import BlockContent from '@sanity/block-content-to-react';
 import { Link } from 'react-router-dom'
 import './News.css'; // Import the CSS file for styling
 
-const News = ({ title, content, expanded, onClick, postedAt, college, roles, imageUrl, slug }) => {
+const News = ({ title, content, expanded, onClick, postedAt, college, roles, imageUrl, slug, stats}) => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
@@ -21,8 +21,9 @@ const News = ({ title, content, expanded, onClick, postedAt, college, roles, ima
       <h2>{title}</h2>
       <div className="category-grid">
         <p className="posted-at">{postedAt}</p>
+        <p className="posted-at">by {roles}</p> 
         <p className="posted-at">{college}</p>
-        <p className="posted-at">by {roles}</p>  
+        <p className="status">{stats}</p>
         
       </div>
       <div className="content-wrapper" style={{ height: `${height}px` }}>
