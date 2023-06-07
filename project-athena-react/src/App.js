@@ -24,7 +24,7 @@ function App() {
               <Route path="/blog/:id" element={<BlogPosts />} />
               <Route path='/contributors' element = {<Contributors/>}/>
               <Route path='/contribute' element = {<Contribute/>}/>
-              <Route path='/news' element = {<NewsPage/>}/>
+              <Route path='/gossip' element = {<NewsPage/>}/>
               <Route path= '*' element= {<PageNotFound/>} />
           </Route>
         </Routes>

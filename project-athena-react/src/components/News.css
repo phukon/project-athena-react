@@ -57,6 +57,8 @@
   text-align: justify; /* Align the body content to justify */
   max-width: 45rem; /* Set a maximum width for the content */
   margin: 0 auto; /* Center the content horizontally */
+  margin-bottom: 0.5rem;
+  font-size: 20px;
 }
 
 .news-box .content-wrapper .block-content > *:not(:last-child) {
@@ -93,6 +95,10 @@
   #news-article-1 > p,
   #news-article-1 > h1 {
     color: #ffffff;
+  }
+
+  .news-box .content-wrapper .block-content {
+    font-size: 17px;
   }
 }
 

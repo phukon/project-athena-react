@@ -65,7 +65,7 @@ const EventsPost = () => {
           </article>
 
           <div id="event-post-article">
-            <img src={`${post.imageUrl}${shouldResizeImage ? '?fit=fill&w=300&h=200' : ''}`} alt="" className="event-post-image"/>
+            <img src={`${post.imageUrl}${shouldResizeImage ? '?fit=fill&w=300&h=200' : '?auto=format&w=500&h=400'}`} alt="" className="event-post-image"/>
 
             <div className="block-content-wrapper">
               <BlockContent blocks={post.body} className="custom-block-content" projectId={projectId} dataset={dataset} />

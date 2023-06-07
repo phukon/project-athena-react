@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import BlockContent from '@sanity/block-content-to-react';
+import { Link } from 'react-router-dom'
 import './News.css'; // Import the CSS file for styling
 
-const News = ({ title, content, expanded, onClick, postedAt, college, roles, imageUrl }) => {
+const News = ({ title, content, expanded, onClick, postedAt, college, roles, imageUrl, slug }) => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
@@ -32,7 +33,9 @@ const News = ({ title, content, expanded, onClick, postedAt, college, roles, ima
             renderContainerOnSingleChild={true}
             className="block-content"
           />
+          <Link to={`/events/${slug}`}><div>Read more</div></Link>
         </div>
+        
       </div>
     </div>
   );
