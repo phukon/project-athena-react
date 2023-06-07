@@ -1,41 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import News from './News';
+import { fetchEventPosts } from '../service/fetchEventPosts';
 
 const NewsPage = () => {
-  // Sample news data
-  const newsData = [
-    {
-      id: 1,
-      title: 'News 1',
-      content: 'Content for News 1...',
-    },
-    {
-      id: 2,
-      title: 'News 2',
-      content: 'Content for News 2...',
-    },
-    // Add more news items as needed
-  ];
+  const [newsData, setNewsData] = useState([]);
 
-  const [expandedNewsId, setExpandedNewsId] = useState(null);
+  useEffect(() => {
+    const fetchNewsData = async () => {
+      try {
+        const data = await fetchEventPosts();
+        setNewsData(data);
+      } catch (error) {
+        console.log('Error while fetching news data:', error.message);
+      }
+    };
 
-  const handleNewsClick = (id) => {
-    if (id === expandedNewsId) {
-      setExpandedNewsId(null);
-    } else {
-      setExpandedNewsId(id);
-    }
+    fetchNewsData();
+  }, []);
+
+  const [expandedNewsIndex, setExpandedNewsIndex] = useState(null);
+
+  const handleNewsClick = (index) => {
+    setExpandedNewsIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
     <div className="news-page">
-      {newsData.map((news) => (
+      {newsData.map((news, index) => (
         <News
-          key={news.id}
+          key={index}
           title={news.title}
-          content={news.content}
-          expanded={news.id === expandedNewsId}
-          onClick={() => handleNewsClick(news.id)}
+          content={news.body}
+          expanded={index === expandedNewsIndex}
+          onClick={() => handleNewsClick(index)}
         />
       ))}
     </div>
