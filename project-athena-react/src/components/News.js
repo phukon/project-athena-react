@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import BlockContent from '@sanity/block-content-to-react';
 import './News.css'; // Import the CSS file for styling
 
-const News = ({ title, content, expanded, onClick }) => {
+const News = ({ title, content, expanded, onClick, postedAt }) => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
@@ -18,9 +18,10 @@ const News = ({ title, content, expanded, onClick }) => {
   return (
     <div className={`news-box ${expanded ? 'expanded' : ''}`} onClick={onClick}>
       <h2>{title}</h2>
+      <p className="posted-at">{postedAt}</p>
       <div className="content-wrapper" style={{ height: `${height}px` }}>
         <div ref={contentRef}>
-          <BlockContent blocks={content} /> {/* Render the block content using BlockContent */}
+          <BlockContent blocks={content} />
         </div>
       </div>
     </div>

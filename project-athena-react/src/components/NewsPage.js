@@ -31,6 +31,7 @@ const NewsPage = () => {
           key={index}
           title={news.title}
           content={news.body}
+          postedAt={news.postedAt}
           expanded={index === expandedNewsIndex}
           onClick={() => handleNewsClick(index)}
         />
