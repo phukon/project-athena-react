@@ -1042,6 +1042,7 @@ main {
     justify-content: center;
     align-items: center;
   }
+
   .imgDesc {
     margin-top: 1rem;
   }
@@ -1102,4 +1103,35 @@ main {
     text-align: center;
   }
     /* end of community page */
+
+  #contributor-article-1 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    background-color:#376fff;
+    font-size: 28px;
+  }
+
+  #contributor-article-1 > p,
+  #contributor-article-1 > h1 {
+    color: #ffffff;
+  }
+
+  .contributor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 9px 8px 0px;
+    min-height: 8rem;
+    max-width: 22rem;
+    display:flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
 }

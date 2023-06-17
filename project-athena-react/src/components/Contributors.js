@@ -28,7 +28,7 @@ export default function Contributors() {
         const resizedImageUrl = `${item.imageUrl}?fit=fillmax&w=190&h=190`;
 
         return (
-          <div className='square-box' key={index}>
+          <div className='contributor' key={index}>
               <h3>Hello!</h3>
               <div id="dateAndUser">
                 <span>{item.postedAt}</span>
@@ -59,7 +59,7 @@ export default function Contributors() {
       </article>
 
       <article id='contributor-article-2'>
-        <div className='contributor' >{renderData}</div>
+        {renderData}
       </article>
     </main>
   );
