@@ -24,20 +24,27 @@ export default function Contributors() {
     const getFiles = async () => {
       const returnedData = await fetchFile();
 
-      const renderedItems = returnedData.map((item, index) => (
-        <div key={index}>
-          <div className='content-container'>
-            <div id='content'>
-              <h2>Riki Phukon</h2>
-              <p>{item.roles}</p>
-              <p>{item.college}</p>
-            </div>
-            <img src={item.imageUrl} alt='' class="small-image"></img>
-          </div>
-          <p>📝</p>
-          <span>{item.description}</span>
+      const renderedItems = returnedData.map((item, index) => {
+        const resizedImageUrl = `${item.imageUrl}?fit=fillmax&w=190&h=190`;
+
+        return (
+          <div className='square-box' key={index}>
+              <h3>Hello!</h3>
+              <div id="dateAndUser">
+                <span>{item.postedAt}</span>
+                <span>Riki Phukon, 17 June 2023</span>
+              </div>
+              <div className="imgDesc">
+              <div className="imgContainer">
+                <img src={resizedImageUrl} alt="" className="small-image" />
+              </div>
+              <div className="descriptionContainer">
+                <p>{item.description}</p>
+              </div>
+             </div>
         </div>
-      ));
+        );
+      });
 
       setRenderData(renderedItems);
     };
