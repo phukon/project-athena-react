@@ -1,16 +1,25 @@
 # Project Athena
 
-## Academic Resource and Networking Platform for Students and Alumni.
 
-- Headless cms for content delivery
-- node.js for users management
+Welcome to Project Athena, an open-source initiative aimed at redefining the educational landscape with a comprehensive student community platform and online academic resource aggregator. This build-in-public series provides a unique opportunity to join us on a transparent journey of empowering students and fostering a thriving educational ecosystem. Together, we will shape the future of education. 🎓🌐
 
-## Future Development
-- Blog
-- Live events
-- Set up the Alumni section
-- Set up servers in the campus
-- O-Auth
+## 💡 Feature Showcase
+
+Let's explore the remarkable functionalities of Project Athena. At the core of our platform lies the Resource Finder, a powerful tool that seamlessly provides access to study materials based on specific parameters such as college, department, and semester. Our mission is to make learning more accessible and efficient for students.
+
+## 🌐 Community Engagement
+
+Project Athena is more than just an academic resource aggregator; it aims to become a vibrant community platform. Join us as we create a space for lively discussions, knowledge sharing, and collaboration. Together, we will forge connections that transcend boundaries and inspire growth.
+
+## 📈 Future Plans
+
+Our vision for Project Athena extends far beyond the present. In the upcoming months, we plan to introduce new features, including an Alumni platform. This platform will enable students to connect with esteemed graduates, gaining invaluable insights for their professional journeys. Together, we will shape the future of education and empower the next generation.
+
+## 🙌 Engage and Collaborate
+
+We invite you all to actively participate in this build-in-public series. Your feedback, ideas, and suggestions are instrumental in shaping the future of Project Athena. Let's create an educational ecosystem where students thrive and inspire each other.
+
+Thank you for joining us on this exciting journey. Together, we will build a brighter future for education. 🌟
 
 
 ### License
